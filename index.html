@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/style.css">        
+        
+    </head>
+    
+    <body>
+
+       <p></p>
+       
+       <div id="blockTitle"></div>
+
+       <div id="blockVideo">
+           
+           <div id="player">
+                    
+                     <div id="indicator">
+                        
+                        <div id="loading">
+                            
+                            <div id="runner"></div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="swithesPodcasts" id="lastPodcast"></button>
+                    <button class="start" id="switchPlayer" onclick="funcSwitch();"></button> 
+                    <button class="swithesPodcasts" id="nextPodcast"></button> 
+                        
+                   
+                    
+                    <img id="volumeImg" src="img/volume.png">
+                    
+                    <div class="buttonsVolume">
+                        
+                        <button class="volume" id="volumeMinus">-</button>
+                        <button class="volume" id="volumePlus">+</button>
+                        
+                    </div>
+                
+              
+               
+               
+           </div>
+           
+           <div id="fonPlayer">
+               
+               <button id="fullScreenPlayer" onclick="funcFullScreen()"></button>
+               
+           </div>
+           
+           <div id="textPodcast"></div>
+           <div id="tags"></div>
+            
+           
+       </div>
+       
+       <div id="channel">
+           
+           <div id="channelInfo"></div>
+           
+           <div id="themeControl">
+               
+               <button class="swithesTheme" id="lastTheme">Предыдущая тема</button>
+               <button id="hideAndShowPodcasts">cкрыть подкасты</button>
+               <button class="swithesTheme" id="nextTheme">Следующая тема</button>
+               
+           </div>
+           
+           <div id="podcasts"></div> 
+           
+       </div>
+       
+      
+     <script src="js/documentAndVar.js"></script> 
+     <script src="js/libraryApi.js"></script>
+     <script src="js/script.js"></script>
+     
+    </body>
+</html>
